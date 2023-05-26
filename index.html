@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+
+            background-image: url('./image/background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .potter img {
+            width: 10em;
+        }
+
+        .tiro {
+            display: none;
+            position: absolute;
+            right: 44em;
+            width: 60px;
+            height: 6px;
+            border-radius: 3px;
+            background-color: rgb(166, 233, 255);
+            animation: andar 0.5s linear 0.0s;
+        }
+
+        @keyframes andar {
+            100% {
+                right: 100%;
+            }
+        }
+    </style>
+    <title>AVADA KEDAVRA</title>
+</head>
+<body>
+    <div class="tiro"></div>
+    <div class="potter">
+        <img src="image/potter.png" alt="" id="potter">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
